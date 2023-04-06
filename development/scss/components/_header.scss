@@ -1,0 +1,134 @@
+.header {
+    padding: 20px 40px 20px 0px;
+    background-color: $white;
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+
+    @media screen and (max-width: 1200px) {
+       padding: 20px 0px;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 6px 0px;
+    }
+
+    &__wrapper {
+        @media screen and (max-width: 992px) {
+            display: none;
+            padding-bottom: 90px;
+            padding-top: 50px;
+        }
+    }
+
+    &__burger {
+        position: absolute;
+        background-color: $black;
+        border-radius: 100%;
+        height: 30px;
+        width: 30px;
+        top: 12px;
+        right: 17px;
+        cursor: pointer;
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+
+        span {
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 16px;
+            background-color: $white;
+            border-radius: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);          
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 16px;
+            background-color: $white;
+            border-radius: 2px;
+            top: 8px;
+            left: 7px;        
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 16px;
+            background-color: $white;
+            border-radius: 2px;
+            bottom: 8px;
+            left: 7px;
+        }
+    }
+
+    .header-burger-active {
+        position: absolute;
+
+        span {
+            display: none;
+        }
+
+        &::before {
+            top: 14px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            bottom: 14px;
+            transform: rotate(-45deg);
+        }
+
+    }
+
+    .header-wrapper-active {
+        position: absolute;
+        display: block;
+        background-color: $white;
+        width: 100%;
+        left: 0%;
+        top: 50px;
+        z-index: 50;
+    }
+
+    &__menu {
+        li {
+            margin-right: 40px;
+            color: #1F1B1C;
+            transition: all .2s ease-in-out;
+
+            @media screen and (max-width: 1200px) {
+                margin-right: 15px;
+            }
+
+            @media screen and (max-width: 992px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            a {
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $black;
+                    padding-bottom: 2px;
+                    border-bottom: 2px solid $green;                  
+                }
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}

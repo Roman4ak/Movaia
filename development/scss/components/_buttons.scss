@@ -1,0 +1,93 @@
+.border-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1F1B1C;
+    padding: 12px 68px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 1px solid $green;
+    border-radius: 12px;
+    background: $white;
+    width: fit-content;
+    text-transform: uppercase;
+    
+
+    &:hover {
+        background: $green;
+        color: $white;
+    }
+
+    &__red {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+        padding: 12px 68px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        border: 1px solid $red;
+        background-color: $grey01;
+        border-radius: 12px;
+        width: fit-content;
+
+        &:hover {
+            background: $red;
+            color: $white;
+        }
+    }
+
+    &__green {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+        padding: 12px 76px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        border: 1px solid $green;
+        border-radius: 12px;
+        width: fit-content;
+        background: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $green;
+        }
+    }
+}
+
+.green-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+    background: $green;
+    border-radius: 12px;
+    text-transform: uppercase;
+    border: none;
+    padding: 11px 44px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    width: fit-content;
+    border: 1px solid $green;
+
+    &:hover {
+        background: $white;
+        color: $black;
+        border: 1px solid $black;
+    }
+
+}
+
+.gray-btn {
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 12px;
+    background: $grey05;
+    padding: 11px 34px;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}

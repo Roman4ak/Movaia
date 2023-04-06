@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Document</title>
+</head>
+
+<header class="header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-xl-2">
+				<a href="#"><img src="img/Movaia logo.png" alt=""></a>
+				<div class="header__burger">
+					<span></span>
+				</div>
+			</div>
+			<div class="col-xl-10 px-3 px-xl-0 ">
+				<div class="header__wrapper">
+					<div class="d-lg-flex align-items-center justify-content-center justify-content-lg-between">
+						<nav>
+							<ul
+								class="header__menu d-flex flex-column flex-lg-row align-items-center justify-content-center ps-0 mb-4 mb-lg-0">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Video requirements</a></li>
+							</ul>
+						</nav>
+						<div
+							class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-end">
+							<button class="border-btn button-popup me-0 me-sm-4 mb-4 mb-sm-0">Log IN</button>
+							<button class="green-btn button-popup-active">Try For Free</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="popup mt-056 mt-xl-082">
+    <div class="popup__content">
+        <svg class="popup__close d-block" width="22" height="22" viewBox="0 0 22 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 0.5C13.7848 0.5 16.4555 1.60625 18.4246 3.57538C20.3938 5.54451 21.5 8.21523 21.5 11C21.5 13.7848 20.3938 16.4555 18.4246 18.4246C16.4555 20.3938 13.7848 21.5 11 21.5C8.21523 21.5 5.54451 20.3938 3.57538 18.4246C1.60625 16.4555 0.5 13.7848 0.5 11C0.5 8.21523 1.60625 5.54451 3.57538 3.57538C5.54451 1.60625 8.21523 0.5 11 0.5ZM8.561 7.2875L11 9.7265L13.439 7.2875C13.5226 7.20388 13.6219 7.13755 13.7311 7.0923C13.8404 7.04704 13.9575 7.02375 14.0758 7.02375C14.194 7.02375 14.3111 7.04704 14.4204 7.0923C14.5296 7.13755 14.6289 7.20388 14.7125 7.2875C14.7961 7.37112 14.8624 7.47039 14.9077 7.57964C14.953 7.6889 14.9763 7.80599 14.9763 7.92425C14.9763 8.04251 14.953 8.1596 14.9077 8.26886C14.8624 8.37811 14.7961 8.47738 14.7125 8.561L12.2735 11L14.7125 13.439C14.7961 13.5226 14.8624 13.6219 14.9077 13.7311C14.953 13.8404 14.9763 13.9575 14.9763 14.0758C14.9763 14.194 14.953 14.3111 14.9077 14.4204C14.8624 14.5296 14.7961 14.6289 14.7125 14.7125C14.6289 14.7961 14.5296 14.8624 14.4204 14.9077C14.3111 14.953 14.194 14.9763 14.0758 14.9763C13.9575 14.9763 13.8404 14.953 13.7311 14.9077C13.6219 14.8624 13.5226 14.7961 13.439 14.7125L11 12.2735L8.561 14.7125C8.47738 14.7961 8.37811 14.8624 8.26886 14.9077C8.1596 14.953 8.04251 14.9763 7.92425 14.9763C7.80599 14.9763 7.6889 14.953 7.57964 14.9077C7.47039 14.8624 7.37112 14.7961 7.2875 14.7125C7.20388 14.6289 7.13755 14.5296 7.0923 14.4204C7.04704 14.3111 7.02375 14.194 7.02375 14.0758C7.02375 13.9575 7.04704 13.8404 7.0923 13.7311C7.13755 13.6219 7.20388 13.5226 7.2875 13.439L9.7265 11L7.2875 8.561C7.11862 8.39212 7.02375 8.16308 7.02375 7.92425C7.02375 7.68542 7.11862 7.45638 7.2875 7.2875C7.45638 7.11862 7.68542 7.02375 7.92425 7.02375C8.16308 7.02375 8.39212 7.11862 8.561 7.2875Z"
+                fill="white" />
+        </svg>
+
+        <div class="popup__name bg-grey01">
+            <div class="text-uppercase title-small text-white fw-bold">Mira Wasovski</div>
+        </div>
+        <div class="popup__body bg-white pt-032 pb-104">
+            <img class="me-auto ms-auto mb-032" src="img/popup-img.png" alt="">
+            <div class="text-center fw-extra-bold title-small mb-3">Oops! You don’t have an active subscription
+            </div>
+            <button class="green-btn d-block me-auto ms-auto">Upload Now</button>
+        </div>
+        <div class="popup__footer">
+            <a href="#">
+                <div class="popup__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Order History</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popup__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Settings</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popup__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Log Out</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="popup-active mt-056 mt-xl-082">
+    <div class="popup-active__content">
+        <svg class="popup-active__close d-block" width="22" height="22" viewBox="0 0 22 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 0.5C13.7848 0.5 16.4555 1.60625 18.4246 3.57538C20.3938 5.54451 21.5 8.21523 21.5 11C21.5 13.7848 20.3938 16.4555 18.4246 18.4246C16.4555 20.3938 13.7848 21.5 11 21.5C8.21523 21.5 5.54451 20.3938 3.57538 18.4246C1.60625 16.4555 0.5 13.7848 0.5 11C0.5 8.21523 1.60625 5.54451 3.57538 3.57538C5.54451 1.60625 8.21523 0.5 11 0.5ZM8.561 7.2875L11 9.7265L13.439 7.2875C13.5226 7.20388 13.6219 7.13755 13.7311 7.0923C13.8404 7.04704 13.9575 7.02375 14.0758 7.02375C14.194 7.02375 14.3111 7.04704 14.4204 7.0923C14.5296 7.13755 14.6289 7.20388 14.7125 7.2875C14.7961 7.37112 14.8624 7.47039 14.9077 7.57964C14.953 7.6889 14.9763 7.80599 14.9763 7.92425C14.9763 8.04251 14.953 8.1596 14.9077 8.26886C14.8624 8.37811 14.7961 8.47738 14.7125 8.561L12.2735 11L14.7125 13.439C14.7961 13.5226 14.8624 13.6219 14.9077 13.7311C14.953 13.8404 14.9763 13.9575 14.9763 14.0758C14.9763 14.194 14.953 14.3111 14.9077 14.4204C14.8624 14.5296 14.7961 14.6289 14.7125 14.7125C14.6289 14.7961 14.5296 14.8624 14.4204 14.9077C14.3111 14.953 14.194 14.9763 14.0758 14.9763C13.9575 14.9763 13.8404 14.953 13.7311 14.9077C13.6219 14.8624 13.5226 14.7961 13.439 14.7125L11 12.2735L8.561 14.7125C8.47738 14.7961 8.37811 14.8624 8.26886 14.9077C8.1596 14.953 8.04251 14.9763 7.92425 14.9763C7.80599 14.9763 7.6889 14.953 7.57964 14.9077C7.47039 14.8624 7.37112 14.7961 7.2875 14.7125C7.20388 14.6289 7.13755 14.5296 7.0923 14.4204C7.04704 14.3111 7.02375 14.194 7.02375 14.0758C7.02375 13.9575 7.04704 13.8404 7.0923 13.7311C7.13755 13.6219 7.20388 13.5226 7.2875 13.439L9.7265 11L7.2875 8.561C7.11862 8.39212 7.02375 8.16308 7.02375 7.92425C7.02375 7.68542 7.11862 7.45638 7.2875 7.2875C7.45638 7.11862 7.68542 7.02375 7.92425 7.02375C8.16308 7.02375 8.39212 7.11862 8.561 7.2875Z"
+                fill="white" />
+        </svg>
+
+        <div class="popup-active__name bg-grey01">
+            <div class="text-uppercase title-small text-white fw-bold">Mira Wasovski</div>
+        </div>
+        <div class="popup-active__body bg-white pt-4 ps-4 pb-242">
+            <div class="popup-active__subscription br-12 br-grey01 py-012 px-4">
+                <div class="text-small text-uppercase text-green fw-bold mb-3">Active Subscription</div>
+                <div class="text-large fw-bold mb-012">Online Running Form Analysis</div>
+                <div class="text-regular mb-2">Free trials period expires December 6, 2022</div>
+                <div class="text-small mb-035">39,9 USD / month thereafter if not cancelled</div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <button class="d-flex align-items-center text-uppercase fw-bold text-regular bg-white"><svg
+                            class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_705_3011)">
+                                <path
+                                    d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M17 8L12 3L7 8M12 3V15"
+                                    stroke="#1F1B1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_705_3011">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>Upload</button>
+                    <div class="d-flex align-items-center">
+                        <button class="text-uppercase text-regular fw-bold bg-white text-grey02 me-4">Renew</button>
+                        <button class="text-uppercase text-regular fw-bold bg-white text-red">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-active__footer">
+            <a href="#">
+                <div class="popup-active__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Order History</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popup-active__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Settings</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popup-active__footer__item d-flex align-items-center justify-content-between py-3 px-4">
+                    <div class="text-uppercase text-regular fw-bold">Log Out</div>
+                    <div class=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z"
+                                fill="#1F1B1C" />
+                        </svg></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="home-page mt-056 mt-xl-082">
+    
+    <section class="title-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class=" fw-extra-bold title-large text-white mb-032 text-center text-lg-start">Be the best runner you can be</h1>
+                        <p class="text-huge text-white mb-032 text-center text-lg-start">Send us your videos for an analysis of your running form. Run
+                            faster with less injury risk</p>
+                        <button class="green-btn">Try For Free</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section pt-080 pt-md-160 pb-080 pb-md-160">
+        <div class=" fw-extra-bold title-regular text-center mb-040">Your personal AI trainer</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class=" video-section__video br-12 bg-grey me-auto ms-auto">
+                        <button class=" video-section__button bg-grey"><svg class="bg-grey" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.6673 15.0007C29.6673 18.8905 28.1221 22.621 25.3715 25.3715C22.621 28.1221 18.8905 29.6673 15.0007 29.6673C11.1108 29.6673 7.38028 28.1221 4.62975 25.3715C1.87922 22.621 0.333984 18.8905 0.333984 15.0007C0.333984 11.1108 1.87922 7.38028 4.62975 4.62975C7.38028 1.87922 11.1108 0.333984 15.0007 0.333984C18.8905 0.333984 22.621 1.87922 25.3715 4.62975C28.1221 7.38028 29.6673 11.1108 29.6673 15.0007ZM12.7823 9.67115C12.6453 9.57356 12.484 9.51558 12.3161 9.50356C12.1483 9.49154 11.9804 9.52594 11.8308 9.603C11.6813 9.68006 11.5558 9.7968 11.4681 9.94044C11.3805 10.0841 11.3341 10.2491 11.334 10.4173V19.584C11.3341 19.7522 11.3805 19.9172 11.4681 20.0609C11.5558 20.2045 11.6813 20.3212 11.8308 20.3983C11.9804 20.4754 12.1483 20.5098 12.3161 20.4977C12.484 20.4857 12.6453 20.4277 12.7823 20.3301L19.199 15.7468C19.3178 15.662 19.4147 15.5501 19.4815 15.4203C19.5483 15.2905 19.5832 15.1466 19.5832 15.0007C19.5832 14.8547 19.5483 14.7108 19.4815 14.581C19.4147 14.4512 19.3178 14.3393 19.199 14.2545L12.7823 9.67115Z"
+                                    fill="#1F1B1C" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="info-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <img class="mb-5 mb-xl-0 ms-auto me-auto ms-xl-0 me-xl-0 mt-5 mt-xl-0 d-none d-xl-block" src="img/girl.png" alt="">
+                </div>
+                <div class="col-xl-6 offset-xl-1 mt-012">
+                    <div class="d-flex flex-column align-items-center align-items-xl-start">
+                        <div class="title-regular fw-extra-bold mb-020 mb-md-032 text-center text-xl-start">Get true insight into your running</div>
+                        <img class="ms-auto me-auto mb-4 d-block d-xl-none" src="img/girl.png" alt="">
+                        <p class="text-large mb-012">Many runners have accepted a popular myth about form, which says that each individual runs
+                            in a manner that is just right for his or her unique anatomy.</p>
+                        <p class="text-large mb-012">As a result, most runners spend their training time practicing bad form. This makes them
+                            run
+                            slower and more likely toget injured.</p>
+                        <p class="text-large mb-040">With your running form report you will get insight into your individual form and specific
+                            exercises to become a stronger runner.</p>
+                        <button class="green-btn">Try For Free</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 mt-012">
+                    <div class="d-flex flex-column align-items-center align-items-xl-start">
+                        <div class="title-regular  fw-extra-bold mb-020 mb-md-032 text-center text-xl-start">Improve fast with laser focus</div>
+                        <img class="ms-auto me-auto mb-4 d-block d-xl-none" src="img/pyramid.png" alt="">
+                        <p class="text-large mb-012">Many runners have accepted a popular myth about form, which says that each individual runs in a manner that is just right for his or her unique anatomy.</p>
+                        <p class="text-large mb-012">As a result, most runners spend their training time practicing bad form. This makes them run
+                        slower and more likely toget injured.</p>
+                        <p class="text-large mb-040">With your running form report you will get insight into your individual form and specific exercises to become a stronger runner.</p>
+                        <button class="green-btn">Try For Free</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 offset-xl-1">
+                    <img class="mb-5 mb-xl-0 ms-auto me-auto ms-xl-0 me-xl-0 mt-5 mt-xl-0 d-none d-xl-block"
+                        src="img/pyramid.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="property-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="title-regular text-white text-center fw-extra-bold mb-032">Feel like a new runner</div>
+                    <p class="text-large text-white text-center">If we see anything sub-optimal in your video, we give you
+                        straightforward drills and videos to help you develop perfect
+                        form.</p>
+                    <p class="text-large text-white text-center mb-040">Feel like a new runner in just weeks, with more
+                        stamina and more power in your strides.</p>
+    
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                Are you striking with your heel, mid foot or fore foot?
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck, thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                The angle of your leg at ground contact
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck,
+                thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                Your cadence (stride rate)
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck,
+                thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                aria-controls="flush-collapseFive">
+                Your posture
+            </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck,
+                thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                aria-controls="flush-collapseSix">
+                The lean of your body
+            </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck,
+                thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+    <div class="accordion-item mb-020 br-12">
+        <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed pe-020 pe-sm-040 pb-020 pt-020 ps-040 title-small fw-extra-bold br-12"
+                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                aria-controls="flush-collapseSeven">
+                Your arm position
+            </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-large ps-040 pe-040 pe-sm-104 pt-0">Posture is simply the alignment of your head,
+                neck,
+                thorax, and hips with respect to each other. Good posture reduces
+                fatigue and helps to make you a more economical runner.</div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentation-section pt-060 pt-md-160">
+        <div class="container">
+            <div class=" fw-extra-bold title-regular text-center mb-040">How it works</div>
+            <div class=" presentation-section__item position-relative">
+                <div class="row justify-content-lg-between ms-4 ms-lg-0">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="title-huge text-green  fw-extra-bold mb-2">01</div>
+                        <div class="mb-2 title-small  fw-extra-bold">It starts with a video of your run</div>
+                        <div class="text-large mb-1 mb-lg-0">Shoot the video yourself or ask a friend. Not sure how? Here are some easy
+                            <span class="text-green">instructions</span>.
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-duration="1500">
+                        <img class="me-auto ms-auto me-lg-0 ms-lg-0" src="img/man-foto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" presentation-section__item position-relative">
+                <div class="row justify-content-lg-between ms-4 ms-lg-0">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="title-huge text-green  fw-extra-bold mb-2">02</div>
+                        <div class="mb-2 title-small  fw-extra-bold">Get your running form report</div>
+                        <div class="text-large mb-1 mb-lg-0">Receive your running form report with clear feedback including pictures of
+                        your run form.</div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-duration="1500">
+                        <img class="me-auto ms-auto me-lg-0 ms-lg-0" src="img/book-page.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" presentation-section__item pb-068 position-relative">
+                <div class="row justify-content-lg-between ms-4 ms-lg-0">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="title-huge text-green  fw-extra-bold mb-2">03</div>
+                        <div class="mb-2 title-small  fw-extra-bold">See results fast with your plan</div>
+                        <div class="text-large mb-1 mb-lg-0">Improve quickly with exercise recommendations, a training plan and exercise
+                            videos.</div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-duration="1500">
+                        <img class="me-auto ms-auto me-lg-0 ms-lg-0" src="img/girl-run.png" alt="">
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+    <section class="call-section pt-050 pb-080 pb-md-160">
+        <div class="container">
+            <div class="row flex-column align-items-center">
+                <div class=" fw-extra-bold title-regular text-center mb-040">Start now to become faster and<br> more injury-resistant
+                </div>
+                <button class="green-btn ">Try For Free</button>
+            </div>          
+        </div>
+    </section>
+
+    <section class="pb-060 pb-md-160">
+        <div class="  fw-extra-bold title-regular text-center mb-038">Runners love us</div>
+        <div class="slider">
+    <div class="slider-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Alex</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-one-img.png" alt="">
+                        </div>
+                        
+                        <p class="text-large mb-0">Quite an eye opener to see the photos with the
+                            angles added. I like the steps to improve. Easy and clear to understand</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Vincent</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-two-img.png" alt="">
+                        </div>
+                        <p class="text-large mb-0">I did two running form analyses before and the results were very similar – but I paid a lot more…</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Christiana</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-three-img.png" alt="">
+                        </div>
+                        <p class="text-large mb-0">Great to get faster than ever at the age of 49 - after more than 15 years of training! Running ist fun again, without
+                        the pain. I love that it feels like floating. I'm also keen on the possibility to check my running form whenever I want
+                        to - never stop improving!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Alex</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-one-img.png" alt="">
+                        </div>
+                
+                        <p class="text-large mb-0">Quite an eye opener to see the photos with the
+                            angles added. I like the steps to improve. Easy and clear to understand</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Vincent</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-two-img.png" alt="">
+                        </div>
+                        <p class="text-large mb-0">I did two running form analyses before and the results were very similar – but I paid a lot more…</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item br-green br-12 px-4 py-4">
+                        <div class="title-small fw-bold mb-010">Christiana</div>
+                        <div class="mb-012">
+                            <img class="slider__img w-100" src="img/slide-three-img.png" alt="">
+                        </div>
+                        <p class="text-large mb-0">Great to get faster than ever at the age of 49 - after more than 15 years of training! Running ist fun again, without
+                        the pain. I love that it feels like floating. I'm also keen on the possibility to check my running form whenever I want
+                        to - never stop improving!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 1.3335C24.1 1.3335 30.6667 7.90016 30.6667 16.0002C30.6667 24.1002 24.1 30.6668 16 30.6668C7.89999 30.6668 1.33332 24.1002 1.33332 16.0002C1.33332 7.90016 7.89999 1.3335 16 1.3335ZM18.9427 11.6095C19.1855 11.358 19.3199 11.0212 19.3169 10.6716C19.3139 10.322 19.1736 9.98761 18.9264 9.7404C18.6792 9.49319 18.3448 9.35297 17.9952 9.34993C17.6456 9.34689 17.3088 9.48129 17.0573 9.72416L11.724 15.0575C11.474 15.3075 11.3336 15.6466 11.3336 16.0002C11.3336 16.3537 11.474 16.6928 11.724 16.9428L17.0573 22.2762C17.3088 22.519 17.6456 22.6534 17.9952 22.6504C18.3448 22.6474 18.6792 22.5071 18.9264 22.2599C19.1736 22.0127 19.3139 21.6783 19.3169 21.3287C19.3199 20.9791 19.1855 20.6423 18.9427 20.3908L14.552 16.0002L18.9427 11.6095Z"
+                    fill="#1F1B1C" /></svg></div>
+
+            <div class="swiper-button-next"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_525_4004)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 1.3335C7.90004 1.3335 1.33337 7.90016 1.33337 16.0002C1.33337 24.1002 7.90004 30.6668 16 30.6668C24.1 30.6668 30.6667 24.1002 30.6667 16.0002C30.6667 7.90016 24.1 1.3335 16 1.3335ZM13.0574 11.6095C12.8145 11.358 12.6801 11.0212 12.6831 10.6716C12.6862 10.322 12.8264 9.98761 13.0736 9.7404C13.3208 9.49319 13.6552 9.35297 14.0048 9.34993C14.3544 9.34689 14.6912 9.48129 14.9427 9.72416L20.276 15.0575C20.526 15.3075 20.6664 15.6466 20.6664 16.0002C20.6664 16.3537 20.526 16.6928 20.276 16.9428L14.9427 22.2762C14.6912 22.519 14.3544 22.6534 14.0048 22.6504C13.6552 22.6474 13.3208 22.5071 13.0736 22.2599C12.8264 22.0127 12.6862 21.6783 12.6831 21.3287C12.6801 20.9791 12.8145 20.6423 13.0574 20.3908L17.448 16.0002L13.0574 11.6095Z"
+                        fill="#1F1B1C" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_525_4004">
+                        <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                </defs></svg></div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section class="hook-section">
+        <div class=" fw-extra-bold title-regular text-white mb-032 text-center">Make this your best season yet</div>
+        <div class="container">
+            <div class="row flex-column align-items-center">                 
+                                                                                                   
+                <div class="col-lg-4 mb-040">
+                    <p class="text-large text-white text-center mb-3">Are you aiming for a PR?</p>
+                    <p class="text-large text-white text-center mb-3">Are you sick and tired of being constantly injured?</p>
+                    <p class="text-large text-white text-center mb-0">Optimize your run form and realize your true potential as a
+                        runner.</p>
+                </div>
+                <button class="green-btn">Try For Free</button>
+            </div>
+            
+        </div>
+    </section>
+
+</main>
+
+
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row justify-content-sm-between">
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start">
+                        <a class="d-block mb-3" href="#"><img src="img/Movaia logo.png" alt=""></a>
+
+                        <ul class="footer__links d-flex ps-0">
+                            <li><a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.9993 2.66699C8.63535 2.66699 2.66602 8.63633 2.66602 16.0003C2.66602 22.655 7.54202 28.171 13.9167 29.1723V19.8537H10.53V16.0003H13.9167V13.063C13.9167 9.72166 15.906 7.87633 18.9527 7.87633C20.4114 7.87633 21.9367 8.13633 21.9367 8.13633V11.4163H20.2567C18.5993 11.4163 18.0833 12.4443 18.0833 13.499V16.0003H21.7807L21.19 19.8537H18.0833V29.1723C24.4567 28.1723 29.3327 22.6537 29.3327 16.0003C29.3327 8.63633 23.3633 2.66699 15.9993 2.66699Z"
+                                            fill="#1F1B1C" />
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_180_813)">
+                                            <path
+                                                d="M16.666 2C8.93477 2 2.66602 8.26875 2.66602 16C2.66602 23.7313 8.93477 30 16.666 30C24.3973 30 30.666 23.7313 30.666 16C30.666 8.26875 24.3973 2 16.666 2ZM23.3941 12.5531C23.4035 12.7 23.4035 12.8531 23.4035 13.0031C23.4035 17.5906 19.9098 22.875 13.5254 22.875C11.5566 22.875 9.73164 22.3031 8.19414 21.3188C8.47539 21.35 8.74414 21.3625 9.03164 21.3625C10.6566 21.3625 12.1504 20.8125 13.341 19.8813C11.816 19.85 10.5348 18.85 10.0973 17.475C10.6316 17.5531 11.1129 17.5531 11.6629 17.4125C10.8777 17.253 10.1719 16.8265 9.66544 16.2056C9.15901 15.5846 8.88316 14.8075 8.88477 14.0063V13.9625C9.34414 14.2219 9.88477 14.3812 10.4504 14.4031C9.9749 14.0862 9.58495 13.6569 9.31511 13.1532C9.04528 12.6495 8.9039 12.087 8.90352 11.5156C8.90352 10.8687 9.07227 10.2781 9.37539 9.76562C10.247 10.8386 11.3345 11.7161 12.5675 12.3411C13.8004 12.9662 15.151 13.3249 16.5316 13.3938C16.041 11.0344 17.8035 9.125 19.9223 9.125C20.9223 9.125 21.8223 9.54375 22.4566 10.2188C23.241 10.0719 23.991 9.77812 24.6598 9.38437C24.4004 10.1875 23.8566 10.8656 23.1348 11.2937C23.8348 11.2188 24.5098 11.025 25.1348 10.7531C24.6629 11.4469 24.0723 12.0625 23.3941 12.5531Z"
+                                                fill="#1F1B1C" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_180_813">
+                                                <rect width="32" height="32" fill="white"
+                                                    transform="translate(0.666016)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.3346 0.639648C7.85141 0.639648 0.974609 7.51645 0.974609 15.9996C0.974609 24.4828 7.85141 31.3596 16.3346 31.3596C24.8178 31.3596 31.6946 24.4828 31.6946 15.9996C31.6946 7.51645 24.8178 0.639648 16.3346 0.639648ZM12.5746 22.366H9.46421V12.3564H12.5746V22.366ZM11.0002 11.1276C10.0178 11.1276 9.38261 10.4316 9.38261 9.57085C9.38261 8.69245 10.037 8.01725 11.0402 8.01725C12.0434 8.01725 12.6578 8.69245 12.677 9.57085C12.677 10.4316 12.0434 11.1276 11.0002 11.1276ZM23.9346 22.366H20.8242V16.8188C20.8242 15.5276 20.373 14.6508 19.2482 14.6508C18.389 14.6508 17.8786 15.2444 17.653 15.8156C17.5698 16.0188 17.549 16.3068 17.549 16.5932V22.3644H14.437V15.5484C14.437 14.2989 14.397 13.254 14.3554 12.3548H17.0578L17.2002 13.7452H17.2626C17.6722 13.0924 18.6754 12.1292 20.3538 12.1292C22.4002 12.1292 23.9346 13.5004 23.9346 16.4476V22.366Z"
+                                            fill="#1F1B1C" />
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.5654 15.7324L14.9718 14.0556C14.6582 13.91 14.4006 14.0732 14.4006 14.4204V17.5788C14.4006 17.9261 14.6582 18.0892 14.9718 17.9436L18.5638 16.2668C18.879 16.1196 18.879 15.8796 18.5654 15.7324ZM16.0006 0.639648C7.51743 0.639648 0.640625 7.51645 0.640625 15.9996C0.640625 24.4828 7.51743 31.3596 16.0006 31.3596C24.4838 31.3596 31.3606 24.4828 31.3606 15.9996C31.3606 7.51645 24.4838 0.639648 16.0006 0.639648ZM16.0006 22.2396C8.13823 22.2396 8.00063 21.5308 8.00063 15.9996C8.00063 10.4684 8.13823 9.75965 16.0006 9.75965C23.863 9.75965 24.0006 10.4684 24.0006 15.9996C24.0006 21.5308 23.863 22.2396 16.0006 22.2396Z"
+                                            fill="#1F1B1C" />
+                                    </svg></a></li>
+                        </ul>
+                        <div class="text-small">©2022, Movaia. All rights reserved.</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="flex-column align-items-start">
+                                    <div class="text-green mb-020 fw-bold text-regular text-uppercase">Company</div>
+                                    <ul class="footer__company flex-column align-items-start ps-0">
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                    <div class="text-small">Privacy Policy</div>
+                                </div>
+                                <div class="flex-column align-items-start">
+                                    <div class="text-green mb-020 fw-bold text-regular text-uppercase">Product</div>
+                                    <ul class="footer__product flex-column align-items-start ps-0">
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Video requirements</a></li>
+                                        <li><a href="#">Subscription</a></li>
+                                    </ul>
+                                    <div class="text-small">Terms Of Services</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/script.js"></script>
+</body>
+
+</html>

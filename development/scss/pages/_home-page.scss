@@ -1,0 +1,110 @@
+ 
+ 
+.title-section {
+    padding: 163px 0px 245px 0px;
+    background-image: url("../img/title-sections-img.png");
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        padding: 63px 0px 145px 0px;
+    }
+}
+
+.video-section {
+
+    &__video {
+        aspect-ratio: 1060/480;
+        position: relative;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
+
+.info-section {
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 80px;
+    }
+}
+
+.property-section {
+    padding: 100px 0px 107px 0px;
+    background-image: url("../img/propert-section-img.png");
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        padding: 70px 0px;
+    }
+}
+
+.presentation-section {
+
+    &__item {
+        padding-bottom: 141px;
+        margin-top: 25px;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 50px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            background-color: $green;
+            border-radius: 100%;
+            transform: translateX(-50%);
+
+            @media screen and (max-width: 992px) {
+                left: 5px;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            border-radius: 12px;
+            background-color: $green;
+            transform: translateX(-50%);
+
+            @media screen and (max-width: 992px) {
+                left: 5px;
+            }
+        }
+    }       
+}
+
+.hook-section {
+    padding: 120px 0px 120px 0px;
+    background-image: url("../img/hook-section-img.png");
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        padding: 60px 0px;
+    }
+}
+
+
+
+    
+
+    
+
+
+
+
+

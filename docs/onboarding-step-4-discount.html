@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+<main class="onboarding h-100 bg-grey01">
+    <div class="onboarding__wrapper bg-white pt-020 pb-012 ps-2 ps-lg-4 pe-2 pe-lg-4 pe-xl-046">
+        <a class="onboarding__logo pb-0 pb-lg-160 test" href="#"><img src="img/Movaia logo.png" alt=""></a>
+        <div class="onboarding__arrow"></div>
+        <div class="onboarding__steps pt-160 pb-172">
+            <div class="onboarding__steps__step d-flex align-items-center">
+                <div class="onboarding__steps__done"></div>
+                <div class="text-large ms-3 ms-lg-0 test">Goals</div>
+            </div>
+            <div class="onboarding__steps__step d-flex align-items-center">
+                <div class="onboarding__steps__done"></div>
+                <div class="text-large ms-3 ms-lg-0 test">Information</div>
+            </div>
+
+            <div class="onboarding__steps__step d-flex align-items-center">
+                <div class="onboarding__steps__done"></div>
+                <div class="text-large ms-3 ms-lg-0 test">Email & Password</div>
+            </div>
+
+            <div class="onboarding__steps__step mb-0 d-flex align-items-center">
+                <div class="onboarding__steps__number br-green">4</div>
+                <div class="text-large ms-3 ms-lg-0 test">Payment</div>
+            </div>
+        </div>
+
+        <div class="text-small mb-2 test"><a href="#">Terms Of Services</a></div>
+        <div class="text-small mb-036 test"><a href="#">Privacy Policy</a></div>
+        <div class="text-small test"><a href="#">©2022, Movaia. All rights reserved.</a></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-3">
+                <div class="pt-040 pb-4 ms-048 ms-lg-0">
+                    <div class="text-green text-uppercase text-small fw-bold mb-2">Step 4</div>
+                    <h1 class="fw-extra-bold title-small text-white mb-032">Payment</h1>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-white px-4 py-3 br-12 mb-4 mb-lg-0">
+                                <div class="text-large mb-020">Billing information</div>
+                                <form class="form">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <div class="form__wrapper mb-3 mb-sm-0">
+                                                <label class="form__label">Full Name</label>
+                                                <input class="form__input" type="text" placeholder="Jon Jonson">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form__wrapper mb-3">
+                                                <label class="form__label">Country</label>
+                                                <input class="form__input" type="text" placeholder="Country">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form__wrapper mb-3">
+                                                <label class="form__label">City</label>
+                                                <input class="form__input" type="text" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <div class="form__wrapper mb-3">
+                                                <label class="form__label">Address</label>
+                                                <input class="form__input" type="text" placeholder="St. Beverly Hills, 40">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="form__wrapper mb-3">
+                                                <label class="form__label">zip code</label>
+                                                <input class="form__input" type="text" placeholder="000000">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-2">
+                                            <div class="form__wrapper">
+                                                <label class="form__label">Phone Number</label>
+                                                <div id="login" onsubmit="process(event)">
+                                                    <input class="form__input w-100" id="phone" type="tel" placeholder="000-000-00-00" name="phone" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="bg-white px-4 py-012 br-12">
+                                <div class="text-large mb-1">Summary</div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <div class="text-large fw-bold ">Online Running Form Analysis</div>
+                                    <div class="text-large fw-bold ">$39.9</div>
+                                </div>
+                                <div class="text-regular mb-2">Free trials period expires December 6,<br> 2022</div>
+                                <div class="text-small mb-3 text-grey01">39.9 USD / month thereafter if not cancelled</div>
+                                <form class="form">
+                                    <div class="form__wrapper mb-3 position-relative">
+                                        <button class="gray-btn form__wrapper__btn">Apply</button>
+                                        <label class="form__label">Discount code</label>
+                                        <input class="form__input pe-120" type="text" placeholder="Discount">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="text-large ">Subtotal</div>
+                                        <div class="text-large fw-bold">$0</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-012">
+                                        <div class="text-large">Tax</div>
+                                        <div class="text-large fw-bold">$0</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="text-large fw-bold">Total</div>
+                                        <div class="text-large fw-bold">$0</div>
+                                    </div>
+                                    <div class="separator mb-020"></div>
+                                    <div class="form__wrapper mb-012">
+                                        <label class="form__label">Card number</label>
+                                        <input class="form__input" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form__wrapper mb-3 mb-lg-0">
+                                                <label class="form__label">Mm / YY</label>
+                                                <input class="form__input" type="text" placeholder="MM / YY">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__wrapper">
+                                                <label class="form__label">Cvv</label>
+                                                <input class="form__input" type="text" placeholder="XXX">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-3">
+                <div class="align-items-center pb-040 ms-048 ms-lg-0">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="onboarding__back border-btn__green mb-3 mb-lg-0">Back</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="green-btn w-100 px-080">confirm</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/script.js"></script>
+</body>
+
+</html>

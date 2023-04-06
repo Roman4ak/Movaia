@@ -1,0 +1,36 @@
+
+.accordion-button { 
+    &::after {
+        content: '';
+        background-image: url('../../img/plus-img.svg'); 
+        
+    }
+
+
+    &:not(.collapsed) {
+
+        &::after {
+            background-image: url('../../img/plus-img.svg'); 
+            transform: rotate(45deg);                            
+        }
+    }       
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: $white;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: $white;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus  {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}

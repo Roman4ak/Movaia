@@ -1,0 +1,83 @@
+.footer {
+    padding: 55px 108px 20px 85px;
+
+    @media screen and (max-width: 992px) {
+        padding: 20px 20px;
+    }
+
+
+    &__links {
+        margin-bottom: 100px;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 16px;
+        }
+        li {
+            margin-right: 22px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__company {
+        margin-bottom: 70px;
+        
+        li {
+            margin-bottom: 12px;          
+            font-size: 14px;
+            line-height: 18px;
+            transition: all .2s ease-in-out;
+
+            
+        }
+
+        a {
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $black;
+                padding-bottom: 2px;
+                border-bottom: 2px solid $green;                  
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__product {
+        margin-bottom: 70px;
+
+        li {
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            transition: all .2s ease-in-out;
+        }
+
+        a {
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $black;
+                padding-bottom: 2px;
+                border-bottom: 2px solid $green;                  
+            }
+        }
+
+        li:last-child {
+            margin-right: 0px;
+        }
+    }
+    
+}

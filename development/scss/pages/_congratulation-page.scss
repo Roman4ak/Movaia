@@ -1,0 +1,19 @@
+.congratulation-section {
+    background-image: url("../img/congratulation-section.png");
+    background-size: cover;
+}
+
+.video-list-section {
+    &__video {
+        aspect-ratio: 412/280;
+        position: relative;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}

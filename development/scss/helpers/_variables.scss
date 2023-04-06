@@ -1,0 +1,185 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+
+// Color
+$black: #111315;
+$green: #ABD037;
+$white: #FFFFFF;
+$grey:  #D9D9D9;
+$grey01:  #686868;
+$grey02:  #AEAEAE;
+$grey03:  #1E1E1E;
+$grey04:  #EEEEEE;
+$grey05:  #BFBFBE;
+$red:  #ff4d4d;
+
+
+
+
+$spacers: (
+    0: 0,
+    1: (
+        $spacer * 0.25,
+    ),
+    2: (
+        $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+        $spacer * 1.5,
+    ),
+    5: (
+        $spacer * 3,
+    ),
+    6: (
+        $spacer * 4,
+    ),
+    "02": (
+        $spacer * 0.125,
+    ),
+    "06": (
+        $spacer * 0.375,
+    ),
+    "010": (
+        $spacer * 0.625,
+    ),
+    "012": (
+        $spacer * 0.75,
+    ),
+    "014": (
+        $spacer * 0.875,
+    ),
+    "018": (
+        $spacer * 1.125,
+    ),
+    "020": (
+        $spacer * 1.25,
+    ),
+    "022": (
+        $spacer * 1.375,
+    ),
+    "028": (
+        $spacer * 1.75,
+    ),
+    "030": (
+        $spacer * 1.875,
+    ),
+    "032": (
+        $spacer * 2,
+    ),
+    "036": (
+        $spacer * 2.25,
+    ),
+    "038": (
+        $spacer * 2.375,
+    ),
+    "035": (
+        $spacer * 2.1875,
+    ),
+    "040": (
+        $spacer * 2.5,
+    ),
+    "046": (
+        $spacer * 2.875,
+    ),
+    "048": (
+        $spacer * 3,
+    ),
+    "050": (
+        $spacer * 3.125,
+    ),
+    "056": (
+        $spacer * 3.5,
+    ),
+    "058": (
+        $spacer * 3.625,
+    ),
+    "060": (
+        $spacer * 3.75,
+    ),
+    "064": (
+        $spacer * 4,
+    ),  
+    "068": (
+        $spacer * 4.25,
+    ), 
+    "070": (
+        $spacer * 4.375,
+    ),
+    "072": (
+        $spacer * 4.5,
+    ),
+    "076": (
+        $spacer * 4.75,
+    ),
+    "080": (
+        $spacer * 5,
+    ),
+    "082": (
+        $spacer * 5.125,
+    ),
+    "090": (
+        $spacer * 5.625,
+    ),
+    "092": (
+        $spacer * 5.75,
+    ),
+    104: (
+        $spacer * 6.5,
+    ),
+    120: (
+        $spacer * 7.5,
+    ),
+    134: (
+        $spacer * 8.375,
+    ),
+    145: (
+        $spacer * 9.0625,
+    ),
+    150: (
+        $spacer * 9.375,
+    ),
+    160: (
+        $spacer * 10,
+    ),
+    172: (
+        $spacer * 10.75,
+    ),
+    176: (
+        $spacer * 11,
+    ),
+    200: (
+        $spacer * 12.5,
+    ),
+    214: (
+        $spacer * 13.375,
+    ),
+    220: (
+        $spacer * 13.75,
+    ),
+    224: (
+        $spacer * 14,
+    ),
+    242: (
+        $spacer * 15.125,
+    ),
+    300: (
+        $spacer * 18.75,
+    ),
+    320: (
+        $spacer * 20,
+    ),
+    340: (
+        $spacer * 21.25,
+    ),
+    360: (
+        $spacer * 22.5,
+    ),
+    374: (
+        $spacer * 23.375,
+    ),
+    380: (
+        $spacer * 23.75,
+    ),
+);
